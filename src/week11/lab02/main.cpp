@@ -16,7 +16,18 @@ int isPrime(int v)
 int main()
 {
     // add your code here
-    
+    int a;
+    int cnt=0;
+    cin>>a;
+    for(int i=2;i<=a;i++){
+        if(isPrime(int i)){
+           cout<<setw(5)<<i;
+            cnt++;
+            if(cnt%10==0){
+              cout<<endl;
+            }
+        }
+    }
     return 0;
 }
 
